@@ -1,0 +1,1 @@
+"%~dp0\osgviewer.exe" --window 10 10 640 480 %1
