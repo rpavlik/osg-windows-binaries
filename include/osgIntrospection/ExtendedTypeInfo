@@ -18,6 +18,19 @@
 #include <string>
 #include <osgIntrospection/type_traits>
 
+// Forward declarations
+namespace osgIntrospection
+{
+	class ExtendedTypeInfo;
+}
+
+template <typename T>
+osgIntrospection::ExtendedTypeInfo extended_typeid(T);
+
+template <typename T>
+osgIntrospection::ExtendedTypeInfo extended_typeid();
+// End forward declarations
+
 namespace osgIntrospection
 {
     /// This class is a wrapper for std::type_info that also records whether

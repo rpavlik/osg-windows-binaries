@@ -21,7 +21,6 @@
 #include <osgIntrospection/Exceptions>
 #include <osgIntrospection/ParameterInfo>
 
-#include <cstdarg>
 #include <string>
 #include <vector>
 

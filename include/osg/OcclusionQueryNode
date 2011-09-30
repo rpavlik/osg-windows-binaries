@@ -60,7 +60,7 @@ public:
 
 // QueryGeometry -- A Drawable that performs an occlusion query,
 //   using its geometric data as the query geometry.
-class QueryGeometry : public osg::Geometry
+class OSG_EXPORT QueryGeometry : public osg::Geometry
 {
 public:
     QueryGeometry( const std::string& oqnName=std::string("") );
@@ -74,8 +74,8 @@ public:
 
     unsigned int getNumPixels();
 
-
-    void releaseGLObjects( osg::State* state = 0 );
+    virtual void releaseGLObjects( osg::State* state = 0 ) const;
+    
     static void deleteQueryObject( unsigned int contextID, GLuint handle );
     static void flushDeletedQueryObjects( unsigned int contextID, double currentTime, double& availableTime );
     static void discardDeletedQueryObjects( unsigned int contextID );

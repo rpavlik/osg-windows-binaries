@@ -16,6 +16,7 @@
 #define OSGINTROSPECTION_CONVERTER_
 
 #include <osgIntrospection/Value>
+#include <osgIntrospection/variant_cast>
 #include <list>
 
 namespace osgIntrospection
