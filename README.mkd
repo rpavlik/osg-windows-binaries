@@ -1,0 +1,6 @@
+# OpenSceneGraph Build for Visual Studio 2012 XP-targeting (v110_xp)
+
+This build uses the source from <https://github.com/rpavlik/osg> and
+the `v110_xp` toolset in Visual Studio 2012 (building for 32-bit).
+
+Details of dependencies in <deps.txt>
