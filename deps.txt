@@ -1,0 +1,8 @@
+Built with VS2012 using the v110_xp toolset.
+
+Built against:
+- zlib-1.2.8 official release
+- libpng-1.2.50 built against zlib dll using nuwen's mingw 10.4 and cmake
+- libjpeg-turbo-1.3.0-vc official release
+- libtiff-4.0.1 fork with cmake ( https://bitbucket.org/edgarv/libtiff-cmake ) built against zlib dll using nuwen's mingw 10.4
+- freetype-2.5.0.1 custom built in "Release" and "Debug" configurations
