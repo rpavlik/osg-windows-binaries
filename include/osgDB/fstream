@@ -19,6 +19,12 @@
 
 #include <fstream>
 
+#ifdef _MSC_VER
+/* Disable a warning made visible in Visual Studio 2012 regarding inheriting from fstream */
+#pragma warning( push )
+#pragma warning( disable: 4250 )
+#endif
+
 namespace osgDB
 {
 
@@ -65,5 +71,9 @@ public:
 };
 
 }
+
+#ifdef _MSC_VER
+#pragma warning( pop )
+#endif
 
 #endif

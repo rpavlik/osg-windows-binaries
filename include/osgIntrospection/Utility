@@ -15,13 +15,12 @@
 #ifndef OSGINTROSPECTION_UTILITY_
 #define OSGINTROSPECTION_UTILITY_
 
-#include <osgIntrospection/Export>
-#include <osgIntrospection/Value>
-#include <osgIntrospection/ParameterInfo>
-#include <osgIntrospection/MethodInfo>
-#include <osgIntrospection/variant_cast>
+#include <osgIntrospection/Export>      // for OSGINTROSPECTION_EXPORT
+#include <osgIntrospection/ParameterInfo>  // for ParameterInfo
+#include <osgIntrospection/Type>        // for ParameterInfoList
+#include <osgIntrospection/Value>       // for ValueList, Value
+#include <osgIntrospection/variant_cast>  // for variant_cast, etc
 
-#include <vector>
 
 namespace osgIntrospection
 {

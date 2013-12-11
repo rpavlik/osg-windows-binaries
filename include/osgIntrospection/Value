@@ -17,7 +17,6 @@
 
 #include <osgIntrospection/Export>
 #include <osgIntrospection/Reflection>
-#include <osgIntrospection/type_traits>
 
 #include <vector>
 #include <memory>

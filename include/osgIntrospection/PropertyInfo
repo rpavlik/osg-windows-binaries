@@ -21,9 +21,6 @@
 #include <osgIntrospection/Attributes>
 
 #include <string>
-#include <typeinfo>
-#include <iosfwd>
-#include <vector>
 
 namespace osgIntrospection
 {

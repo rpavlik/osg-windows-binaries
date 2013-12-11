@@ -15,6 +15,7 @@
 #ifndef OSGINTROSPECTION_READERWRITER_
 #define OSGINTROSPECTION_READERWRITER_
 
+#include <osgIntrospection/variant_cast_fwd>
 #include <osgIntrospection/Value>
 #include <osgIntrospection/Type>
 #include <osgIntrospection/Exceptions>
@@ -30,11 +31,6 @@
 
 namespace osgIntrospection
 {
-	class Value;
-	template<typename T> T variant_cast(const Value& v);
-    template<typename T> bool requires_conversion(const Value& v);
-    template<typename T> T* extract_raw_data(Value& v);
-    template<typename T> const T* extract_raw_data(const Value& v);
 
     /// This is the base class for reader/writer objects. A ReaderWriter's
     /// purpose is to provide the means for writing the content of a Value

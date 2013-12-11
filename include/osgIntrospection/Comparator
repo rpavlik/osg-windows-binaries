@@ -15,6 +15,9 @@
 #ifndef OSGINTROSPECTION_COMPARATOR_
 #define OSGINTROSPECTION_COMPARATOR_
 
+#include <osgIntrospection/Exceptions>
+#include <osgIntrospection/ExtendedTypeInfo>
+#include <osgIntrospection/variant_cast>
 
 namespace osgIntrospection
 {

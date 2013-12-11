@@ -14,22 +14,25 @@
 #ifndef OSGINTROSPECTION_TYPE
 #define OSGINTROSPECTION_TYPE
 
-#include <osgIntrospection/Export>
-#include <osgIntrospection/Exceptions>
-#include <osgIntrospection/Value>
 #include <osgIntrospection/CustomAttributeProvider>
-#include <osgIntrospection/ExtendedTypeInfo>
+#include <osgIntrospection/Exceptions>  // for TypeNotDefinedException
+#include <osgIntrospection/Export>      // for OSGINTROSPECTION_EXPORT
+#include <osgIntrospection/ExtendedTypeInfo>  // for ExtendedTypeInfo, etc
+#include <osgIntrospection/Reflection>  // for Reflection
+#include <osgIntrospection/Value>       // for Value, ValueList
 
-#include <string>
-#include <typeinfo>
-#include <vector>
-#include <map>
-#include <algorithm>
+#include <algorithm>                    // for find
+#include <map>                          // for map
+#include <string>                       // for string, operator==, etc
+#include <typeinfo>                     // for type_info
+#include <vector>                       // for vector
+
 
 namespace osgIntrospection
 {
 
     // forward declarations
+    class Type;
     class MethodInfo;
     class PropertyInfo;
     class ParameterInfo;
@@ -276,6 +279,7 @@ namespace osgIntrospection
         virtual void getInheritedProviders(CustomAttributeProviderList& providers) const;
 
     private:
+        friend class GenericReflectorBase;
         template<typename C> friend class Reflector;
         template<typename C> friend struct TypeNameAliasProxy;
         friend class Reflection;
