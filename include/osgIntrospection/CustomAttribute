@@ -15,15 +15,17 @@
 #ifndef OSGINTROSPECTION_CUSTOMATTRIBUTE_
 #define OSGINTROSPECTION_CUSTOMATTRIBUTE_
 
+#include <osgIntrospection/Export>
+
 namespace osgIntrospection
 {
 
     /// The base class for custom attributes. This is an empty class
     /// for now.
-    class CustomAttribute
+    class OSGINTROSPECTION_EXPORT CustomAttribute
     {
     public:
-        virtual ~CustomAttribute() {}
+        virtual ~CustomAttribute();
     };
 
 }
